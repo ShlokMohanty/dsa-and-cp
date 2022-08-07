@@ -1,0 +1,24 @@
+suppose m = 5
+F^K : (i1,i2,....,ik), where each index of a bag from whcih the ball is taken out is an odd number 
+G(t): number of ways to take out balls from the bag so that all the elements from tuple t are indices 
+of bags with odd balls.
+ans : sum of G(t) over all possible tuples t.
+if the number of distinct elements in a tuple is d , then G(t) for the tuple can be calculated 
+as [m/2]^d.m^(n-d)
+summation(i=1 to k )(H(i).[m/2]^(i).m(n-i))
+if i>n , then H(i)=0
+dp(i,j) : number of tuples i elements with j distinct ones :
+i=1, j=1, dp(i,j)=n for an element there are n ways to choose it 
+i=1, j!=1 , dp(i,j)=0
+i>1 and j=1 , dp(i,j) = dp(i-1,j).j + dp(i-1,j-1).(n-j+1)
+
+time complexity: O(k*k)
+speeding up : values are from 1 to k 
+first appearance of i is only after the value of i-1.
+{1,2,..,n}--> separated into the subsets 
+calculating the value of the H(i)?
+if we consider i as the number of the elements of the tupple 
+n ways to choose the first one and n-1 ways to choose the second one 
+H(i) = S(K.i).j=0 to i-1(n-j) where S(k,i) is the stirling number of teh second kind for the parameters 
+k and i . 
+problem solved with time complexity : O(k)
