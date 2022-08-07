@@ -1,4 +1,6 @@
-suppose m = 5
+suppose m = 6
+d=5
+[6/2]^5.6^()
 F^K : (i1,i2,....,ik), where each index of a bag from whcih the ball is taken out is an odd number 
 G(t): number of ways to take out balls from the bag so that all the elements from tuple t are indices 
 of bags with odd balls.
