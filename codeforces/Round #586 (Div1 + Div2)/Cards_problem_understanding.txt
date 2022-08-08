@@ -1,0 +1,24 @@
+3 yrs old, fav number in binary notation , 
+
+1<=n<=10^5--> the length of the string 
+'Z', 'e', 'r', 'o' and 'n'
+'zero': 0 
+'One': 1
+output:
+max possible number in binary notation 
+print binary digits separated by a space 
+
+input:
+4
+ezor // correct intial digit is zero 
+output:
+0
+
+input :
+10
+nznooeeoer // oneonezero 
+output:
+1 1 0
+
+// for one : 1 one : 1 zero: 0
+
