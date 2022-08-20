@@ -1,0 +1,28 @@
+1) elements stored iat non-contiguous memory locations and are linked to each other using pointers.
+2) Data : stores the data value of the node.That is the information to be stored at teh current node
+   Next Pointer: Pointer variable or any other variable which stores the address of the next node in teh 
+   memory.
+   A(Head)|Next --->  B|Next --> C|Next --> D|Next--> NULL
+3) size of the linked list can be incremented or decremented instead of arrays during the runtime.
+4) insertion and deletion are easy in a linked list as there is no shifting involved in that.
+
+Disadvantages : 
+1) Random Access is not allowed in linked lists.We have to access elements sequentially starting 
+from the first node.
+2) Extra memory space for a pointer is required with each element of the list.
+3) Not cache friendly.
+
+representing a node using structure 
+struct Node
+{
+int data;
+struct Node* next;
+}
+//constructor to create a new node 
+//next is by default initialized 
+// as NULL 
+Node(int d)
+{
+data = d;
+}
+}
