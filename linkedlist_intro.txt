@@ -26,3 +26,20 @@ Node(int d)
 data = d;
 }
 }
+
+ what does this means , ListNode() : val(0), next(nullptr) {}?
+ answer: it is a constructor (ListNode(5)): it will set parameter val to 5, and next to null 
+ example :
+ struct my_struct{
+ int a;
+ int b;
+ my_struct(int x,int y): a(x), b(y) {}
+ };
+ int main(){
+ my_struct st(2,5);
+ cout<< st.a<<" "<<st.b<<endl;
+ return 0;
+ 
+ }
+ }
+ 
